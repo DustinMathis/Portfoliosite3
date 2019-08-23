@@ -3,6 +3,9 @@ body {
   color: #fff;
   font-family: 'Grand Hotel', cursive; }
 
+.navbar {
+  background: #e08cb3; }
+
 #home-section {
   background: url("../img/profilepic.jpg") no-repeat;
   min-height: 575px;
@@ -23,10 +26,10 @@ body {
   #home-section .home-inner {
     padding-top: 125px; }
 
-.eduimg {
-  animation: fadeInAnimation ease 10s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards; }
+.grow:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3); }
 
 .social {
   margin: 24px 0;
@@ -45,8 +48,17 @@ body {
 .social li a:hover {
   color: #e08cb3; }
 
-.navbar {
-  background: #e08cb3; }
+.education {
+  background: #333;
+  color: #fff; }
+
+.edu {
+  color: #fff; }
+
+.eduimg {
+  animation: fadeInAnimation ease 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
 
 .info {
   margin-right: 1rem; }
@@ -59,15 +71,3 @@ body {
     opacity: 0; }
   100% {
     opacity: 1; } }
-
-.grow:hover {
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3); }
-
-.education {
-  background: #333;
-  color: #fff; }
-
-.edu {
-  color: #fff; }

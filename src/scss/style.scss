@@ -1,6 +1,5 @@
 $bg-color: #333;
 $font-color: #fff;
-$primary-color: #008ed6;
 $dark-overlay: rgba(0,0,0,0.3);
 $icon-size: 30px;
 
@@ -13,6 +12,14 @@ body{
   
 }
 
+//Navbar
+
+.navbar {
+  background: #e08cb3;
+    
+}
+
+//Home Section
 #home-section{
   background: url('../img/profilepic.jpg') no-repeat;
     min-height: 575px;
@@ -52,12 +59,13 @@ body{
 
 
 }
-
-.eduimg{
-  animation: fadeInAnimation ease 10s; 
-      animation-iteration-count: 1; 
-      animation-fill-mode: forwards; 
+//Profile Pic grow animation
+.grow:hover{ 
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
 }
+
 
 // FA-Icons
 .social {
@@ -77,22 +85,41 @@ body{
 .social li a:hover { color: #e08cb3; }
 
 
-//Navbar
 
-.navbar {
-    background: #e08cb3;
-      
+
+//Education Section
+.education{
+  background: $bg-color;
+  color: $font-color;
+
 }
+
+.edu{
+  color: $font-color;
+}
+
+
+.eduimg{
+  animation: fadeInAnimation ease 10s; 
+      animation-iteration-count: 1; 
+      animation-fill-mode: forwards; 
+}
+
+
+
 
 .info{
   margin-right: 1rem;
 }
 
-
+//Footer
 .page-footer{
   background: #e08cb3;
   
 }
+
+
+//Fade in Animation for page load
 
 @keyframes fadeInAnimation { 
   0% { 
@@ -104,11 +131,6 @@ body{
 } 
 
 
-   .grow:hover{
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
-}
 
 
 //loaded fonts
@@ -116,14 +138,4 @@ body{
 // font-family: 'Indie Flower', cursive;
 // font-family: 'Lobster', cursive;
 // font-family: 'Pacifico', cursive;
-
-.education{
-  background: $bg-color;
-  color: $font-color;
-
-}
-
-.edu{
-  color: $font-color;
-}
 
