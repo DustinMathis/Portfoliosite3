@@ -1,22 +1,35 @@
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; }
+
 body {
-  background: #333;
+  background: url("../img/bg-image.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: #fff;
-  font-family: 'Grand Hotel', cursive; }
+  font-family: 'Grand Hotel', cursive;
+  width: 100%;
+  margin: 0px;
+  overflow-x: hidden;
+  background-color: #333; }
 
 .navbar {
   background: #e08cb3; }
 
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: cover; }
+
 #home-section {
   background: url("../img/profilepic.jpg") no-repeat;
-  min-height: 575px;
-  background-size: cover;
-  background-attachment: fixed;
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; }
-  #home-section .dark-overlay {
-    background-color: rgba(0, 0, 0, 0.3);
-    background-size: cover; }
+  #home-section .inner {
+    padding-top: 10vh; }
   #home-section .profile-pic {
     border-radius: 50%;
     border: #e08cb3 2px solid;
@@ -24,7 +37,9 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards; }
   #home-section .home-inner {
-    padding-top: 125px; }
+    padding-top: 7vh; }
+  #home-section .lead {
+    font-size: 1.4rem; }
 
 .grow:hover {
   -webkit-transform: scale(1.3);
@@ -50,7 +65,8 @@ body {
 
 .education {
   background: #333;
-  color: #fff; }
+  color: #fff;
+  margin-top: 10%; }
 
 .edu {
   color: #fff; }
